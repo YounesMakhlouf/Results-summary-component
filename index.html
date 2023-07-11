@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <meta content="Results summary component" name="description">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+    <title>Results summary component</title>
+</head>
+<body>
+<main>
+    <div class="grid">
+        <section id="result">
+            <h1>Your Result</h1>
+            <div class="circle">
+                <p id="total-score">76</p>
+                <p class="transparent" id="max-score">of 100</p>
+            </div>
+            <strong class="appreciation">Great</strong>
+            <p class="rank transparent">You scored higher than 65% of the people who have taken these tests.</p>
+        </section>
+        <section id="summary">
+            <h2>Summary</h2>
+            <div class="category" id="reaction">
+                <div class="icon-group">
+                    <img alt="reaction" src="assets/images/icon-reaction.svg">
+                    <span id="reaction-text">Reaction</span>
+                </div>
+                <div class="total-score">
+                    <span class="score">80</span>
+                    <span class="total transparent">/ 100</span>
+                </div>
+            </div>
+            <div class="category" id="memory">
+                <div class="icon-group">
+                    <img alt="memory" src="assets/images/icon-memory.svg">
+                    <span id="memory-text">Memory</span>
+                </div>
+                <div class="total-score">
+                    <span class="score">92</span>
+                    <span class="total transparent">/ 100</span>
+                </div>
+            </div>
+            <div class="category" id="verbal">
+                <div class="icon-group">
+                    <img alt="verbal" src="assets/images/icon-verbal.svg">
+                    <span id="verbal-text">Verbal</span>
+                </div>
+                <div class="total-score">
+                    <span class="score">61</span>
+                    <span class="total transparent">/ 100</span>
+                </div>
+            </div>
+            <div class="category" id="visual">
+                <div class="icon-group">
+                    <img alt="visual" src="assets/images/icon-visual.svg">
+                    <span id="visual-text">Visual</span>
+                </div>
+                <div class="total-score">
+                    <strong class="score">72</strong>
+                    <span class="total transparent">/ 100</span>
+                </div>
+            </div>
+            <button>Continue</button>
+        </section>
+    </div>
+</main>
+</body>
+</html>
