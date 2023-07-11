@@ -24,7 +24,7 @@
 body {
     font-family: "Hanken Grotesk", sans-serif;
     line-height: 1.5;
-    max-width: 33rem;
+    max-width: 40rem;
     margin: auto;
     min-height: 100vh;
     display: grid;
@@ -46,12 +46,17 @@ h2 {
     font-size: 1.2rem;
 }
 
+h1, h2 {
+    line-height: 1.1;
+    margin-bottom: 1.25em;
+}
+
 .circle {
     background: linear-gradient(var(--violet-blue), var(--persian-blue));
     border-radius: 50%;
     aspect-ratio: 1;
     max-width: 40%;
-    margin: 1.25em auto;
+    margin: 1.5em auto;
     padding: 1em;
     display: flex;
     justify-content: center;
@@ -69,20 +74,22 @@ h2 {
 #result {
     color: var(--white);
     background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
-    border-radius: 0 0 1rem 1rem;
+    border-radius: 0 0 1.5rem 1.5rem;
     text-align: center;
-    padding: 0 2.5em;
     min-height: 100%;
     grid-column-start: 1;
 }
 
+section {
+    padding: 0 2.5em;
+}
+
 #summary {
     grid-column-start: 2;
-    padding: 0 1.5em;
 }
 
 #total-score {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 800;
     line-height: 1.1;
     margin-top: 0.25em;
@@ -99,21 +106,13 @@ h2 {
     font-size: 1.625rem;
 }
 
-.rank {
-    font-size: 0.8125rem;
-    color: var(--pale-blue);
-    padding-bottom: 2em;
-    max-width: 80%;
-    margin: 1em auto;
-}
-
 .transparent {
-    opacity: 0.6;
+    opacity: 0.5;
 }
 
 .category {
     padding: 0.75em;
-    margin-bottom: 0.75em;
+    margin-bottom: 1em;
     border-radius: 0.5em;
     display: flex;
     align-items: center;
@@ -135,7 +134,7 @@ button {
     color: var(--white);
     min-width: 100%;
     border-radius: 500px;
-    padding: 0.9175em;
+    padding: 1em;
     margin: 2em 0;
     border: none;
     font-weight: bold;
@@ -143,6 +142,15 @@ button {
 
 button:hover {
     background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+}
+
+.rank {
+    color: var(--pale-blue);
+    padding: 0.75em 1em 2.5em 0.75em;
+    max-width: 85%;
+    margin: 0 auto;
+    line-height: 1.2;
+    opacity: 0.6;
 }
 
 /* Colors */
