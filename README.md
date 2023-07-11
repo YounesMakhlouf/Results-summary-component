@@ -1,6 +1,6 @@
 # Frontend Mentor - Results summary component solution
 
-gitFrontend Mentor challenges help you improve your coding skills by building realistic projects.
+Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -40,11 +40,15 @@ Users should be able to:
 ### What I learned
 
 Using HSLA to play with the color transparency, adding a beautiful glassy effect.
+</br>
 Using a mobile-first approach
+</br>
+The ancient art of centering divs
 
 ### Useful resources
 
 - [Box Shadow](https://getcssscan.com/css-box-shadow-examples) - This is a very useful box-shadow picker.
+- [Centering](https://moderncss.dev/complete-guide-to-centering-in-css/) - This covers everything about centering a div.
 
 ## Author
 

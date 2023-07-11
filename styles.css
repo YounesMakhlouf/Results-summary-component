@@ -26,6 +26,9 @@ body {
     line-height: 1.5;
     max-width: 33rem;
     margin: auto;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
 }
 
 p {
@@ -180,7 +183,6 @@ button:hover {
     .grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        transform: translateY(50%);
         border-radius: 1rem;
     }
 
