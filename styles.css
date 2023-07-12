@@ -21,9 +21,17 @@
     --dark-gray-blue: hsl(224, 30%, 27%);
 }
 
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
 body {
     font-family: "Hanken Grotesk", sans-serif;
-    line-height: 1.5;
+    line-height: 1.6;
     max-width: 40rem;
     margin: auto;
     min-height: 100vh;
@@ -36,10 +44,9 @@ p {
 }
 
 h1 {
-    font-size: 1.125rem;
+    font-size: 1.1825rem;
     opacity: 0.7;
-    margin-top: 0;
-    padding-top: 1.5em;
+    font-weight: normal;
 }
 
 h2 {
@@ -48,16 +55,15 @@ h2 {
 
 h1, h2 {
     line-height: 1.1;
-    margin-bottom: 1.25em;
+    margin-bottom: 1.5em;
 }
 
 .circle {
     background: linear-gradient(var(--violet-blue), var(--persian-blue));
     border-radius: 50%;
     aspect-ratio: 1;
-    max-width: 40%;
+    width: min(80%, 11em);
     margin: 1.5em auto;
-    padding: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,7 +87,7 @@ h1, h2 {
 }
 
 section {
-    padding: 0 2.5em;
+    padding: 2.5em;
 }
 
 #summary {
@@ -111,7 +117,7 @@ section {
 }
 
 .category {
-    padding: 0.75em;
+    padding: 0.725em;
     border-radius: 0.5em;
     display: flex;
     align-items: center;
@@ -137,9 +143,10 @@ button {
     color: var(--white);
     min-width: 100%;
     border-radius: 500px;
-    padding: 1em;
-    margin: 2.5em 0;
+    padding: 0.925em;
+    margin-top: 2em;
     border: none;
+    font-size: 1rem;
     font-weight: bold;
 }
 
@@ -150,11 +157,23 @@ button:hover, button:focus-visible {
 
 .rank {
     color: var(--pale-blue);
-    padding: 0.75em 1em 2.5em 0.75em;
-    max-width: 85%;
-    margin: 0 auto;
+    padding: 0 0.925em;
+    margin: 0.5em auto 0;
     line-height: 1.2;
     opacity: 0.6;
+}
+
+/* Desktop */
+@media (min-width: 400px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border-radius: 1rem;
+    }
+
+    #result {
+        border-radius: 1rem;
+    }
 }
 
 /* Colors */
@@ -188,25 +207,4 @@ button:hover, button:focus-visible {
 
 #visual-text {
     color: var(--cobalt-blue);
-}
-
-
-@media (min-width: 400px) {
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        border-radius: 1rem;
-    }
-
-    #result {
-        border-radius: 1rem;
-    }
-
-    .circle {
-        max-width: 60%;
-    }
-
-    .rank {
-        max-width: 100%;
-    }
 }
