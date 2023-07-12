@@ -112,12 +112,15 @@ section {
 
 .category {
     padding: 0.75em;
-    margin-bottom: 1em;
     border-radius: 0.5em;
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-weight: bold;
+}
+
+.category:not(:last-of-type) {
+    margin-bottom: 1em;
 }
 
 .icon-group {
@@ -135,13 +138,14 @@ button {
     min-width: 100%;
     border-radius: 500px;
     padding: 1em;
-    margin: 2em 0;
+    margin: 2.5em 0;
     border: none;
     font-weight: bold;
 }
 
-button:hover {
+button:hover, button:focus-visible {
     background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+    outline: none;
 }
 
 .rank {
