@@ -1,23 +1,20 @@
 const categoriesSection = document.querySelector("#categories");
 
-function Func() {
-    fetch("./data.json")
-        .then((res) => res.json())
-        .then((data) => data.map(addElement))
-        .catch((error) => console.error(error));
-}
+fetch("./data.json")
+    .then((res) => res.json())
+    .then((data) => data.map(addElement))
+    .catch((error) => console.error(error));
 
 function addElement(element) {
     try {
-        const {category, icon, score} = element;
-        const html = getCategory(category, icon, score);
+        const html = getCategory(element);
         categoriesSection.insertAdjacentHTML('beforeend', html);
     } catch (error) {
         console.error(error);
     }
 }
 
-function getCategory(category, icon, score) {
+function getCategory({category, icon, score}) {
     return `<div class="category" id="${category}">
                 <div class="icon-group">
                     <img alt="${category}" src="${icon}">
@@ -29,5 +26,3 @@ function getCategory(category, icon, score) {
                 </div>
             </div>`;
 }
-
-Func();

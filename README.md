@@ -56,4 +56,4 @@ Using the Javascript fetch API
 ## Author
 
 - GitHub - [YounesMakhlouf](https://github.com/YounesMakhlouf)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/YounesMakhlouf)
+- Frontend Mentor - [@younesmakhlouf](https://www.frontendmentor.io/profile/YounesMakhlouf)

@@ -61,7 +61,7 @@ h1, h2 {
 .circle {
     background: linear-gradient(var(--violet-blue), var(--persian-blue));
     border-radius: 50%;
-    aspect-ratio: 1;
+    aspect-ratio: 1/1;
     width: min(80%, 11em);
     margin: 1.5em auto;
     display: flex;
