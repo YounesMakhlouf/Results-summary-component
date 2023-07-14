@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Screenshots
 
-![](./screenshot.png)
-![](./screenshot-mobile.png)
+![](./assets/screenshots/screenshot.png)
+![](./assets/screenshots/screenshot-mobile.png)
 
 ## My process
 
@@ -36,6 +36,7 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+- JavaScript Fetch API
 
 ### What I learned
 
@@ -44,6 +45,8 @@ Using HSLA to play with the color transparency, adding a beautiful glassy effect
 Using a mobile-first approach
 </br>
 The ancient art of centering divs
+</br>
+Using the Javascript fetch API
 
 ### Useful resources
 

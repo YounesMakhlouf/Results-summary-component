@@ -177,34 +177,34 @@ button:hover, button:focus-visible {
 }
 
 /* Colors */
-#reaction {
+#Reaction {
     background: var(--light-red-background);
 }
 
-#memory {
+#Memory {
     background: var(--orangey-yellow-background);
 }
 
-#verbal {
+#Verbal {
     background: var(--green-teal-backgound);
 }
 
-#visual {
+#Visual {
     background: var(--cobalt-blue-background);
 }
 
-#reaction-text {
+.Reaction {
     color: var(--light-red);
 }
 
-#memory-text {
+.Memory {
     color: var(--orangey-yellow);
 }
 
-#verbal-text {
+.Verbal {
     color: var(--green-teal);
 }
 
-#visual-text {
+.Visual {
     color: var(--cobalt-blue);
 }
