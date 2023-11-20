@@ -117,6 +117,10 @@ section {
 }
 
 .category {
+    --_icon: var(--icon, pink);
+    --_background: var(--background, red);
+
+    background-color: var(--_background);
     padding: 0.725em;
     border-radius: 0.5em;
     display: flex;
@@ -132,6 +136,7 @@ section {
 .icon-group {
     display: flex;
     align-items: center;
+    color: var(--_icon);
 }
 
 img {
@@ -176,35 +181,22 @@ button:hover, button:focus-visible {
     }
 }
 
-/* Colors */
 #Reaction {
-    background: var(--light-red-background);
+    --background: var(--light-red-background);
+    --icon: var(--light-red);
 }
 
 #Memory {
-    background: var(--orangey-yellow-background);
+    --background: var(--orangey-yellow-background);
+    --icon: var(--orangey-yellow);
 }
 
 #Verbal {
-    background: var(--green-teal-backgound);
+    --background: var(--green-teal-backgound);
+    --icon: var(--green-teal);
 }
 
 #Visual {
-    background: var(--cobalt-blue-background);
-}
-
-.Reaction {
-    color: var(--light-red);
-}
-
-.Memory {
-    color: var(--orangey-yellow);
-}
-
-.Verbal {
-    color: var(--green-teal);
-}
-
-.Visual {
-    color: var(--cobalt-blue);
+    --background: var(--cobalt-blue-background);
+    --icon: var(--cobalt-blue);
 }

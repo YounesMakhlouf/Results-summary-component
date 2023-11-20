@@ -17,7 +17,7 @@ function addElement(element) {
 function getCategory({category, icon, score}) {
     return `<div class="category" id="${category}">
                 <div class="icon-group">
-                    <img alt="${category}" src="${icon}">
+                    <img alt="${category}" src="${icon}" width="20" height="20">
                     <span class="${category}">${category}</span>
                 </div>
                 <div class="total-score">
